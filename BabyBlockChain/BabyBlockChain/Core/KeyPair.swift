@@ -32,7 +32,6 @@ extension KeyPair: KeyPairProtocol {
         get {
             return fetchPublicKey()
         }
-       
     }
     
     func genKeyPair() {

@@ -27,4 +27,4 @@
 Обмеження   
     Базовий рівень роботи з крипто гаманцями(Trust wallet)
 
-2) Added KeyPair implementation
+2) Added KeyPair & Signature implementation
