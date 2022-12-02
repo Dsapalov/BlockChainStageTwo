@@ -40,36 +40,6 @@ extension KeyPair: KeyPairProtocol {
             print("Internal error - createPrivateKey failed")
         }
     }
-    
-    func test() {
-        let testText = "KeyPair::test"
-        guard let safePublicKey = publicKey else { return }
-        guard let safePrivateKey = privateKey else { return }
-        let textToEncryptData = testText.data(using: .utf8)!
-
-        // encrypt
-        guard let cipherText = SecKeyCreateEncryptedData(safePublicKey,
-                                                         .rsaEncryptionOAEPSHA512,
-                                                         textToEncryptData as CFData,
-                                                         nil) as Data? else {
-            return
-        }
-        
-        // decrypt
-        guard let clearTextData = SecKeyCreateDecryptedData(safePrivateKey,
-                                                            .rsaEncryptionOAEPSHA512,
-                                                            cipherText as CFData,
-                                                            nil) as Data? else {
-            return
-        }
-
-        guard let resultText = String(data: clearTextData, encoding: .utf8) else { return }
-        if resultText == testText {
-            print("KeyPair::test OK")
-        } else {
-            print("KeyPair::test FAILED")
-        }
-    }
 }
 
 private extension KeyPair {
@@ -89,7 +59,6 @@ private extension KeyPair {
         
         return publicKey
     }
-    
     
     func getTag() -> Data? {
         let bundleID = Bundle.main.bundleIdentifier
