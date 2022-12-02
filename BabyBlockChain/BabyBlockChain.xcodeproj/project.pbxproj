@@ -13,6 +13,16 @@
 		B6E65AE52939A94500367200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E65AE32939A94500367200 /* Main.storyboard */; };
 		B6E65AE72939A94800367200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E65AE62939A94800367200 /* Assets.xcassets */; };
 		B6E65AEA2939A94800367200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E65AE82939A94800367200 /* LaunchScreen.storyboard */; };
+		B6E65AFC2939A99800367200 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF22939A99800367200 /* KeyPair.swift */; };
+		B6E65AFD2939A99800367200 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF32939A99800367200 /* Hash.swift */; };
+		B6E65AFE2939A99800367200 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF42939A99800367200 /* PublicKey.swift */; };
+		B6E65AFF2939A99800367200 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF52939A99800367200 /* Block.swift */; };
+		B6E65B002939A99800367200 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF62939A99800367200 /* Signature.swift */; };
+		B6E65B012939A99800367200 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF72939A99800367200 /* PrivateKey.swift */; };
+		B6E65B022939A99800367200 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF82939A99800367200 /* Blockchain.swift */; };
+		B6E65B032939A99800367200 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AF92939A99800367200 /* Transaction.swift */; };
+		B6E65B042939A99800367200 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AFA2939A99800367200 /* Account.swift */; };
+		B6E65B052939A99800367200 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E65AFB2939A99800367200 /* Operation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		B6E65AE62939A94800367200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E65AE92939A94800367200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E65AEB2939A94800367200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E65AF22939A99800367200 /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		B6E65AF32939A99800367200 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		B6E65AF42939A99800367200 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		B6E65AF52939A99800367200 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		B6E65AF62939A99800367200 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		B6E65AF72939A99800367200 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		B6E65AF82939A99800367200 /* Blockchain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		B6E65AF92939A99800367200 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B6E65AFA2939A99800367200 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B6E65AFB2939A99800367200 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 		B6E65ADC2939A94500367200 /* BabyBlockChain */ = {
 			isa = PBXGroup;
 			children = (
+				B6E65AF12939A99800367200 /* Core */,
 				B6E65ADD2939A94500367200 /* AppDelegate.swift */,
 				B6E65ADF2939A94500367200 /* SceneDelegate.swift */,
 				B6E65AE12939A94500367200 /* ViewController.swift */,
@@ -65,6 +86,23 @@
 				B6E65AEB2939A94800367200 /* Info.plist */,
 			);
 			path = BabyBlockChain;
+			sourceTree = "<group>";
+		};
+		B6E65AF12939A99800367200 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B6E65AF22939A99800367200 /* KeyPair.swift */,
+				B6E65AF32939A99800367200 /* Hash.swift */,
+				B6E65AF42939A99800367200 /* PublicKey.swift */,
+				B6E65AF52939A99800367200 /* Block.swift */,
+				B6E65AF62939A99800367200 /* Signature.swift */,
+				B6E65AF72939A99800367200 /* PrivateKey.swift */,
+				B6E65AF82939A99800367200 /* Blockchain.swift */,
+				B6E65AF92939A99800367200 /* Transaction.swift */,
+				B6E65AFA2939A99800367200 /* Account.swift */,
+				B6E65AFB2939A99800367200 /* Operation.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E65B032939A99800367200 /* Transaction.swift in Sources */,
+				B6E65AFD2939A99800367200 /* Hash.swift in Sources */,
+				B6E65AFF2939A99800367200 /* Block.swift in Sources */,
 				B6E65AE22939A94500367200 /* ViewController.swift in Sources */,
+				B6E65AFC2939A99800367200 /* KeyPair.swift in Sources */,
+				B6E65B042939A99800367200 /* Account.swift in Sources */,
+				B6E65B002939A99800367200 /* Signature.swift in Sources */,
+				B6E65B012939A99800367200 /* PrivateKey.swift in Sources */,
 				B6E65ADE2939A94500367200 /* AppDelegate.swift in Sources */,
+				B6E65AFE2939A99800367200 /* PublicKey.swift in Sources */,
+				B6E65B052939A99800367200 /* Operation.swift in Sources */,
 				B6E65AE02939A94500367200 /* SceneDelegate.swift in Sources */,
+				B6E65B022939A99800367200 /* Blockchain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
